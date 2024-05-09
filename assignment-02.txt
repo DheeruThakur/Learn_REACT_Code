@@ -1,0 +1,96 @@
+1. What is `NPM`?
+
+NPM is a world's largest "software registry". Open Source developers use NPM to share and borrow packeges. 
+Many organisations use NPM to manage private development.
+
+2. What is `Parcel/Webpack`? Why do we need it?
+
+Parcel/Webpack are module bundler or web application bundler which takes pieces of javascript and its 
+dependencies and bundles them in a single file to make it browser ready.
+we need parcel/webpack to bundle our raw code and convert it into optimised and browser understandable code.
+
+3. What is `.parcel-cache`
+
+It is a directory created by parcel bundler, it is used as cache to store intermediate build results.
+It helps in boost performance by storing subsequent builds.
+
+4. What is `npx` ?
+
+NPX stands for Node Package Execute. It is a NPM Package runner. It allows developers to execute any 
+javascript package available on NPM registry without even installing it. NPX is installed automatically
+with NPM.
+
+5. What is difference between `dependencies` vs `devDependencies`
+
+Dependencies are the crucial packages required for the application to work properly on production. 
+But devDependencies are like tools or utilities which are used in development process not on production. 
+
+6. What is Tree Shaking?
+
+Tree Shaking is a commonly term used for removal of dead code. It relies on "import" and "export" statements 
+to detect if code is used between javascript files.
+Nowadays same work is done by bundlers which creates single optimised file for production from multiple 
+javascript files. It automatically removes dead code while generating production ready file.
+
+7. What is Hot Module Replacement?
+
+Hot Module Replacement (HMR) exchange , add or remove modules while an application is running without a 
+full reload. It speed up the development process and retain the state of application which is lost during 
+full reload.
+
+8. List down your favourite 5 superpowers of Parcel and describe any 3 of them in your own words.
+
+-> Hot Module Replacement (HMR)
+-> Minification
+-> File Watcher Algorithm - made in C++
+-> Cleaning our code
+-> Dev and Production build.
+-> Image optimization
+-> Caching while development
+-> compress
+-> Consistent hashing Algorithm
+-> Port number
+-> compatible with older version of browser
+-> Zero configuration
+
+9. What is `.gitignore`? What should we add and not add into it?
+
+.gitignore file tell Git which files to ignore while commiting your project to the GitHub repository. 
+It is present in the root directory of the repo.
+we can add files in it like "node_modules" , ".parcel-cache".
+
+10. What is the difference between `package.json` and `package-lock.json`
+
+package.json is a file which maintains and documents the dependencies and meta-data info of project.
+But package-lock.json contains the full information of the Dependencies and sub-dependencies used inside 
+project along with their exact versions which helps in reinstallation of the dependencies on different 
+environment.It is automatically created and updated when any package is installed or updated using NPM. 
+
+11. Why should I not modify `package-lock.json`?
+
+package-lock.json contains crucial dependencies information used in our project, Modifying it can create 
+dependency issue on production environment and leads to inconsistency among different environments.
+
+12. What is `node_modules` ? Is it a good idea to push that on git?
+
+node_modules is the folder which acts as a cache for external modules which are used inside the project. 
+When we npm install them, they are downloaded from web and copied into node_modules folder. 
+It is not a good idea to push it on git because it is very heavy and can regenerate 
+by simply doing "npm install".
+
+13. What is the `dist` folder?
+
+dist folder contains minimized version of source code. The code present inside /dist folder is actually 
+the code which is used on production web application, the /dist folder also comprises of all the compiled 
+modules that may or may not be used with other systems.
+
+14. What is `browserlists`
+
+Browserlists is a tool which allows specifying which browser should be supported by our frontend app 
+by specifying "queries" in config file. 
+
+15. Script types -
+ -> type = "text/javascript" - by default
+ -> type = "module"
+ -> type = "data"
+ -> type = "application/json"
