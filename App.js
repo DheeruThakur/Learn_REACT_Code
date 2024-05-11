@@ -1,11 +1,12 @@
 import React from "react"
-import ReactDOM from "react-dom"
+import ReactDOM from "react-dom/client"
 
 
 const heading1 = React.createElement(
     "h1",
     {
-        id : "head1"
+        id : "head1",
+        key : "1"
     },
     "Heading1"
 )
@@ -13,7 +14,8 @@ const heading1 = React.createElement(
 const heading2 = React.createElement(
     "h2",
     {
-        id : "head2"
+        id : "head2",
+        key : "2"
     },
     "Heading2"
 )
@@ -21,7 +23,8 @@ const heading2 = React.createElement(
 const heading3 = React.createElement(
     "p",
     {
-        id : "para"
+        id : "para",
+        key : "3"
     },
     "dheeru@Dheerus-MacBook-Air React_Code % git remote add origin https://github.com/abc/Learn_REACT_Code.git"
 )
@@ -29,7 +32,8 @@ const heading3 = React.createElement(
 const heading4 = React.createElement(
     "div",
     {
-        id : "div1"
+        id : "div1",
+        key : "4"
     },
     [heading3]
 )
