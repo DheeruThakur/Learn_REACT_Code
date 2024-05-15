@@ -1,0 +1,48 @@
+.img-container {
+  background-color: #ccc;
+  width: 225px;
+  height: 180px;
+}
+
+.div-1 {
+  background-color: #ccc;
+  width: 200px;
+  height: 21.5px;
+  margin-top: 18.72px;
+  margin-bottom: 8px;
+}
+
+.div-2 {
+  background-color: #ccc;
+  width: 180px;
+  height: 18.5px;
+  margin-bottom: 6px;
+}
+
+.div-3 {
+  background-color: #ccc;
+  width: 160px;
+  height: 15.5px;
+}
+
+.search-div {
+  background-color: #ccc;
+  border: 1px solid #000;
+  border-radius: 2px;
+  width: 147px;
+  height: 21.5px;
+  margin-top: .5px;
+  margin-right: 1px;
+  display: inline-block;
+}
+
+.button-div {
+  background-color: #c4c2c2;
+  border: 1px solid #000;
+  border-radius: 2px;
+  width: 58.24px;
+  height: 21.5px;
+  margin-top: .5px;
+  display: inline-block;
+}
+/*# sourceMappingURL=index.c41b5a0e.css.map */
