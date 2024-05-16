@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import Card from "./Card"
 import Shimmer from "./Shimmer"
+import { Link } from "react-router-dom"
 
 
 function handleSearch(searchText , restaurantList){
@@ -51,7 +52,7 @@ const Body = () => {
                 {   (filteredRestaurantList.length === 0) ? <h1>No Restaurant is available with this search</h1>
                     : filteredRestaurantList.map(restaurant => {
                         return (
-                            <Card {...restaurant.info}/>
+                            <Link to={"/restaurant-menu/" + restaurant.info.id} key={restaurant.info.id}><Card {...restaurant.info}/></Link>
                         )
                     })
                 }

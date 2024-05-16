@@ -9,7 +9,7 @@ const Shimmer = () => {
             { 
                 Array.from({length:10}).map((el , idx) => {
                     return (
-                        <div className="card">
+                        <div key={idx} className="card">
                             <div className="img-container"></div>
                             <div className="card-content">
                                 <div className="div-1"></div>

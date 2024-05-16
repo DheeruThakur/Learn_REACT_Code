@@ -1,0 +1,40 @@
+1. What are various ways to add images into our App? Explain with code examples
+
+Ans - 4 WAYS TO DISPLAY IMAGES IN REACT JS
+
+     -  Use the import keyword.                 code :- (import logo from './logo.png')
+     -  Use the require keyword.                        code :- (require('./logo.png'))
+     -  Import SVGs directly as a React component.      code :- (import {ReactComponent as Logo} from './logo.png') and use as <Logo />
+     -  Load images directly from the network.          code :- <img src="https:1234/------    />"
+
+
+2. What would happen if we do console.log(useState())?
+
+Ans - we get array of size 2 
+    first element is a variable and second one is a function
+
+3. How will useEffect behave if we don't add a dependency array ?
+
+Ans - If we dont add a dependency array then it runs initially and after every change in state and props.
+
+4. What is SPA?
+
+Ans- SPA stands for Single Page Application. It loads a HTML page and change its content dynamically as the user interact with the application.
+
+5. What is difference between Client Side Routing and Server Side Routing?
+
+Ans- Server side routing
+
+-> The client (i.e., browser) makes a request to the server for a particular page.
+-> The server uses the identifiers in the URL pathname to retrieve the relevant data from its database.
+-> The server populates a template (HTML document) with this data.
+-> The server returns the template along with other assets like CSS/images to the client.
+-> The client renders these assets.
+-> For subsequent route changes, the client again sends a new request to the server, and the above is repeated.
+
+Client side routing
+
+-> The client makes an initial request to the server.
+-> The server responds with a primary HTML document (the single page of the SPA) and associated assets (e.g., JavaScript, CSS).
+-> The client interprets the JavaScript, and the app logic determines which content to display based on the URL path.
+-> For subsequent route changes, the JavaScript updates the browser’s history and displayed content without a full page reload.
