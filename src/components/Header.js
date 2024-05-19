@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
     const [isLoggedIn , setIsLoggedIn] = useState(false)
-    console.log(useState())
 
     return (
         <div className="header">

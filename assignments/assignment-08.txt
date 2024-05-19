@@ -1,0 +1,63 @@
+1. (Research) Why do we use super(props) in constructor?
+
+Ans- A super constructor is a special constructor in the class hierarchy of object-oriented programming languages. It refers to the 
+    constructor of the parent class that is being extended in the current class. The purpose of using the super constructor with a props 
+    argument is to inherit the properties of the parent class and also pass in additional properties as arguments to the child class.
+
+    if we don't use super() inside child class constructor then we don't access this context/reference. And if we don't use super(props) 
+    inside child class constructor then we don't get access to this.props inside child class class constructor.
+
+2. (Research) Why can't we have the callback function of useEffect async?
+
+Ans- useEffect cannot directly use an async function because it expects a cleanup function or nothing, not a Promise.
+    To handle async operations, define an async function inside the useEffect and call it immediately.
+    This ensures useEffect remains synchronous, allowing React to manage effects and cleanups correctly.
+
+3. Why do we use componentWillUnmount? Show with example
+
+Ans- we use componentWillUnmount to write clean up code. for example :-
+
+    class About extends React.Component {
+
+        constructor(props) {
+            super(props)
+        }
+
+        componentDidMount() {
+            this.timer = setInterval(() => {
+                console.log("Hi")
+            })
+        }
+
+        componentWillUnmount() {
+            clearInterval(this.timer)
+        }
+
+        render() {
+            return (
+                <>
+                    <h1>About Us</h1>
+                    <p>This is information about our organization page</p>
+                </>
+            )
+        }
+    }
+
+4. Why do we use componentDidMount?
+
+Ans- The componentDidMount() method allows us to execute the React code when the component is already placed in the DOM 
+    (Document Object Model). This method is called during the Mounting phase of the React Life-cycle i.e after the component 
+    is rendered.
+
+    All the AJAX requests and the DOM or state updation should be coded in the componentDidMount() method block. We can also set up 
+    all the major subscriptions here but to avoid any performance issues, always remember to unsubscribe them in the 
+    componentWillUnmount() method.
+
+5. What is the order of life cycle method calls in Class Based Components
+
+Ans- constructor -> render -> componentDidMount -> componentDidUpdate -> componentWillUpdate
+
+6. How do you create Nested Routes react-router-dom cofiguration
+
+Ans- By passing children array inside parent component and use "Outlet" component from "react-router-dom"
+

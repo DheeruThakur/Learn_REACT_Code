@@ -11,6 +11,8 @@ import Support from "./components/Support"
 import Cart from "./components/Cart"
 import RestaurantMenu from "./components/RestaurantMenu"
 import Login from "./components/Login"
+// import Profile from "./components/Profile"
+import ProfileClass from "./components/ProfileClass"
 
     
     
@@ -39,7 +41,13 @@ const appRouter = createBrowserRouter([
             {
                 path : "/about",
                 element : <About />,
-                errorElement : <Error />
+                errorElement : <Error />,
+                children : [
+                    {
+                        path : "profile",
+                        element : <ProfileClass />
+                    }
+                ]
             },
             {
                 path : "/contact-us",
