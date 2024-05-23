@@ -1,34 +1,30 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import Card from "./Card"
 import Shimmer from "./Shimmer"
 import { Link } from "react-router-dom"
+import { handleSearch } from "../utils/helper"
+import useRestaurants from "../utils/useRestaurants"
+import useOnline from "../utils/useOnline"
 
-
-function handleSearch(searchText , restaurantList){
-    return restaurantList.filter(restaurant => restaurant.info.name.toLowerCase().includes(searchText.toLowerCase()))
-}
 
 const Body = () => {
     const [searchText , setSearchText] = useState("")
-    const [allRestaurantList , setAllRestaurantList] = useState([])
-    const [filteredRestaurantList , setFilteredRestaurantList] = useState([])
 
-
-    async function getRestaurants() {
-        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.60202294167309&lng=77.33847241848707&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
-        const jsonData = await data.json()
-        setAllRestaurantList(jsonData.data.cards[4].card.card.gridElements.infoWithStyle.restaurants)
-        setFilteredRestaurantList(jsonData.data.cards[4].card.card.gridElements.infoWithStyle.restaurants)
-    }
-
-    useEffect(() => {
-        
-        getRestaurants()
-       
-    },[])
+    const [allRestaurantList , filteredRestaurantList , setFilteredRestaurantList] = useRestaurants();
 
     // not render the component (Early return)
     if(!allRestaurantList) return null
+
+
+    const isOnline = useOnline();
+
+    if(!isOnline){
+        return <>
+                <h1>you are Offline</h1>
+                <h1>please check your internet connection</h1>
+              </>
+    }
+
 
     // Conditional rendering
     return (allRestaurantList.length === 0) ? <Shimmer /> : (

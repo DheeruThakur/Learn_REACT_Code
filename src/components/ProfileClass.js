@@ -21,21 +21,23 @@ class ProfileClass extends Component {
     }
 
     // life cycle methods
-    async componentDidMount(){
+    componentDidMount(){
 
-        const data = await fetch("https://api.github.com/users/DheeruThakur")
-        const jsonData = await data.json()
+        // const data = await fetch("https://api.github.com/users/DheeruThakur")
+        // const jsonData = await data.json()
         this.setState({
-            userInfo : jsonData
+            userInfo : {
+                name : "abc"
+            }
         })
-        console.log("Component Did mount - child" + this.props.name)
+        console.log("Component Did mount - " + this.props.name)
     }
     componentDidUpdate() {
-        console.log("componentDidUpdate - child")
+        console.log("componentDidUpdate - " + this.props.name)
     }
 
     render() {
-        console.log("render - child" + this.props.name)
+        console.log("render - " + this.props.name)
         return (
             <>
                 <h1>This is class based profile component</h1>

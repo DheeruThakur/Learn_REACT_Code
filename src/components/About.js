@@ -10,7 +10,7 @@ class About extends React.Component {
     constructor(props) {
         super(props)
         console.log("constructor - parent")
-        console.log(this.props)
+        // console.log(this.props)
         this.state = {
             count : 0
         }
@@ -18,28 +18,28 @@ class About extends React.Component {
     }
 
     componentDidMount() {
-        // console.log("componentDidMount - parent")
-        this.setState({count : 1})
+        console.log("componentDidMount - parent")
+        // this.setState({count : 1})
     }
 
     componentDidUpdate() {
-        // console.log("componentDidUpdate - parent")
+        console.log("componentDidUpdate - parent")
     }
 
     componentWillUnmount() {
-        // console.log("componentWillUnmount-parent")
+        console.log("componentWillUnmount-parent")
     }
 
     render() {
-        // console.log("render - parent")
-        console.log(this.props)
+        console.log("render - parent")
+        // console.log(this.props)
         return (
             <>
                 <h1>About Us</h1>
                 <p>This is information about our organization page</p>
-                {/* <ProfileClass name="first"/> */}
-                {/* <ProfileClass name="second"/> */}
-                <Profile name="functional"></Profile>
+                <ProfileClass name="first"/>
+                <ProfileClass name="second"/>
+                {/* <Profile name="functional"></Profile> */}
             </>
         )
     }
