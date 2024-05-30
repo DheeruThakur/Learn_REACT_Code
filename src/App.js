@@ -1,4 +1,4 @@
-import React , {lazy , Suspense} from "react"
+import React , {useState, lazy , Suspense} from "react"
 import ReactDOM from "react-dom/client"
 import Header from "./components/Header"
 import Body from "./components/Body"
@@ -14,19 +14,30 @@ import Login from "./components/Login"
 // import Profile from "./components/Profile"
 import ProfileClass from "./components/ProfileClass"
 import Shimmer from "./components/Shimmer"
+import UserContext from "./utils/UserContext"
 
 const Instamart = lazy(() => import('./components/Instamart'));
 
     
     
 const AppLayout = () => {
+
+    const [user , setUser] = useState({
+        name : "dheeru",
+        email : "abc@gmail.com"
+    })
+
     return (
-        <React.Fragment>
-            <Header />
-            <Outlet />
-            {/* <Body /> */}
-            <Footer />
-        </React.Fragment>
+        <>
+            <UserContext.Provider value={{
+                user : user,
+                setUser
+            }}>
+                <Header />
+                <Outlet />
+                <Footer />
+            </UserContext.Provider>
+        </>
     )
 }
 

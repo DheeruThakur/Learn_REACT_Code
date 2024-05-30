@@ -2983,45 +2983,60 @@ var _profileClass = require("./components/ProfileClass");
 var _profileClassDefault = parcelHelpers.interopDefault(_profileClass);
 var _shimmer = require("./components/Shimmer");
 var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
+var _userContext = require("./utils/UserContext");
+var _userContextDefault = parcelHelpers.interopDefault(_userContext);
+var _s = $RefreshSig$();
 const Instamart = /*#__PURE__*/ (0, _react.lazy)(()=>require("45bbc3eb0b2df3bc"));
 _c = Instamart;
 const AppLayout = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactDefault.default).Fragment, {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 20,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 21,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 23,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/App.js",
-        lineNumber: 19,
-        columnNumber: 10
-    }, undefined);
+    _s();
+    const [user, setUser] = (0, _react.useState)({
+        name: "dheeru",
+        email: "abc@gmail.com"
+    });
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userContextDefault.default).Provider, {
+            value: {
+                user: user,
+                setUser
+            },
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 29,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 30,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 31,
+                    columnNumber: 17
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/App.js",
+            lineNumber: 25,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false);
 };
+_s(AppLayout, "mO0jj21fRiFmGPe4dtyPV7OPWLI=");
 _c1 = AppLayout;
 const appRouter = (0, _reactRouterDom.createBrowserRouter)([
     {
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 28,
+            lineNumber: 37,
             columnNumber: 12
         }, undefined),
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 29,
+            lineNumber: 38,
             columnNumber: 17
         }, undefined),
         children: [
@@ -3029,12 +3044,12 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 32,
+                    lineNumber: 41,
                     columnNumber: 14
                 }, undefined),
                 errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 33,
+                    lineNumber: 42,
                     columnNumber: 19
                 }, undefined)
             },
@@ -3042,12 +3057,12 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/about",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 36,
+                    lineNumber: 45,
                     columnNumber: 14
                 }, undefined),
                 errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 37,
+                    lineNumber: 46,
                     columnNumber: 19
                 }, undefined),
                 children: [
@@ -3055,7 +3070,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                         path: "profile",
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileClassDefault.default), {}, void 0, false, {
                             fileName: "src/App.js",
-                            lineNumber: 40,
+                            lineNumber: 49,
                             columnNumber: 16
                         }, undefined)
                     }
@@ -3065,12 +3080,12 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/contact-us",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 44,
+                    lineNumber: 53,
                     columnNumber: 14
                 }, undefined),
                 errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 45,
+                    lineNumber: 54,
                     columnNumber: 19
                 }, undefined)
             },
@@ -3078,12 +3093,12 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/support",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _supportDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 48,
+                    lineNumber: 57,
                     columnNumber: 14
                 }, undefined),
                 errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 49,
+                    lineNumber: 58,
                     columnNumber: 19
                 }, undefined)
             },
@@ -3091,12 +3106,12 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/cart",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cartDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 52,
+                    lineNumber: 61,
                     columnNumber: 14
                 }, undefined),
                 errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 53,
+                    lineNumber: 62,
                     columnNumber: 19
                 }, undefined)
             },
@@ -3104,12 +3119,12 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/restaurant-menu/:resId",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantMenuDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 56,
+                    lineNumber: 65,
                     columnNumber: 14
                 }, undefined),
                 errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 57,
+                    lineNumber: 66,
                     columnNumber: 19
                 }, undefined)
             }
@@ -3120,22 +3135,22 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Suspense), {
             fallback: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 61,
+                lineNumber: 70,
                 columnNumber: 32
             }, void 0),
             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Instamart, {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 62,
+                lineNumber: 71,
                 columnNumber: 21
             }, undefined)
         }, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 61,
+            lineNumber: 70,
             columnNumber: 12
         }, undefined),
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 64,
+            lineNumber: 73,
             columnNumber: 17
         }, undefined)
     },
@@ -3143,12 +3158,12 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
         path: "/login",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginDefault.default), {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 67,
+            lineNumber: 76,
             columnNumber: 12
         }, undefined),
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 68,
+            lineNumber: 77,
             columnNumber: 17
         }, undefined)
     }
@@ -3158,7 +3173,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: appRouter
 }, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 71,
+    lineNumber: 80,
     columnNumber: 13
 }, undefined));
 var _c, _c1;
@@ -3170,7 +3185,7 @@ $RefreshReg$(_c1, "AppLayout");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/Header":"hsJbF","./components/Body":"8yaV8","./components/Footer":"8pPOA","react-router-dom":"9xmpe","./components/About":"9R1Eu","./components/Error":"kvula","./components/Contact":"cgAOG","./components/Support":"h84os","./components/Cart":"h8J3U","./components/RestaurantMenu":"8PuJ6","./components/Login":"hsmcH","./components/ProfileClass":"aeEz8","./components/Shimmer":"g6ZGj","45bbc3eb0b2df3bc":"3IbrY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/Header":"hsJbF","./components/Body":"8yaV8","./components/Footer":"8pPOA","react-router-dom":"9xmpe","./components/About":"9R1Eu","./components/Error":"kvula","./components/Contact":"cgAOG","./components/Support":"h84os","./components/Cart":"h8J3U","./components/RestaurantMenu":"8PuJ6","./components/Login":"hsmcH","./components/ProfileClass":"aeEz8","./components/Shimmer":"g6ZGj","45bbc3eb0b2df3bc":"3IbrY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./utils/UserContext":"c5vgB"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -27425,136 +27440,156 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactRouterDom = require("react-router-dom");
+var _userContext = require("../utils/UserContext");
+var _userContextDefault = parcelHelpers.interopDefault(_userContext);
 var _s = $RefreshSig$();
 const Header = ()=>{
     _s();
     const [isLoggedIn, setIsLoggedIn] = (0, _react.useState)(false);
+    const { user } = (0, _react.useContext)((0, _userContextDefault.default));
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "header",
+        className: "flex justify-between bg-pink-50 shadow-md",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                 href: "/",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    className: "p-2 h-20",
                     alt: "logo",
                     src: "https://i.pinimg.com/736x/53/86/f8/5386f88ec5872dbcd07b49afac02b5f2.jpg"
                 }, void 0, false, {
                     fileName: "src/components/Header.js",
-                    lineNumber: 7,
+                    lineNumber: 11,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 6,
+                lineNumber: 10,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                className: "flex p-6",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        className: "p-2",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                             to: "/about",
                             children: "About"
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 10,
-                            columnNumber: 21
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/components/Header.js",
-                        lineNumber: 10,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                            to: "/contact-us",
-                            children: "Contact Us"
-                        }, void 0, false, {
-                            fileName: "src/components/Header.js",
-                            lineNumber: 11,
-                            columnNumber: 21
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/components/Header.js",
-                        lineNumber: 11,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                            to: "/support",
-                            children: "Support"
-                        }, void 0, false, {
-                            fileName: "src/components/Header.js",
-                            lineNumber: 12,
-                            columnNumber: 21
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/components/Header.js",
-                        lineNumber: 12,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                            to: "/cart",
-                            children: "Cart"
-                        }, void 0, false, {
-                            fileName: "src/components/Header.js",
-                            lineNumber: 13,
-                            columnNumber: 21
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/components/Header.js",
-                        lineNumber: 13,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                            to: "/instamart",
-                            children: "Instamart"
-                        }, void 0, false, {
-                            fileName: "src/components/Header.js",
                             lineNumber: 14,
-                            columnNumber: 21
+                            columnNumber: 37
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Header.js",
                         lineNumber: 14,
                         columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        className: "p-2",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "/contact-us",
+                            children: "Contact Us"
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 15,
+                            columnNumber: 37
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/Header.js",
+                        lineNumber: 15,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        className: "p-2",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "/support",
+                            children: "Support"
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 16,
+                            columnNumber: 37
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/Header.js",
+                        lineNumber: 16,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        className: "p-2",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "/cart",
+                            children: "Cart"
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 17,
+                            columnNumber: 37
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/Header.js",
+                        lineNumber: 17,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        className: "p-2",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "/instamart",
+                            children: "Instamart"
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 18,
+                            columnNumber: 37
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/Header.js",
+                        lineNumber: 18,
+                        columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Header.js",
-                lineNumber: 9,
+                lineNumber: 13,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                className: "p-5 m-2 text-red-900",
+                children: user.name
+            }, void 0, false, {
+                fileName: "src/components/Header.js",
+                lineNumber: 20,
                 columnNumber: 13
             }, undefined),
             isLoggedIn ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                className: "py-6 px-3",
                 onClick: ()=>setIsLoggedIn(false),
                 children: "logout"
             }, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 16,
+                lineNumber: 23,
                 columnNumber: 27
             }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                 to: "/login",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    className: "py-6 px-3",
                     onClick: ()=>setIsLoggedIn(true),
                     children: "login"
                 }, void 0, false, {
                     fileName: "src/components/Header.js",
-                    lineNumber: 16,
-                    columnNumber: 108
+                    lineNumber: 23,
+                    columnNumber: 130
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 16,
-                columnNumber: 90
+                lineNumber: 23,
+                columnNumber: 112
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Header.js",
-        lineNumber: 5,
+        lineNumber: 9,
         columnNumber: 10
     }, undefined);
 };
-_s(Header, "g0MSgNVZk+vKiEFnDJ9VPEfswFA=");
+_s(Header, "gcoMpkWpYA+qd3+9Tqj5E3ZpM4M=");
 _c = Header;
 exports.default = Header;
 var _c;
@@ -27565,7 +27600,7 @@ $RefreshReg$(_c, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/UserContext":"c5vgB"}],"9xmpe":[function(require,module,exports) {
 /**
  * React Router DOM v6.23.1
  *
@@ -34426,7 +34461,30 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"786KC"}],"8yaV8":[function(require,module,exports) {
+},{"7422ead32dcc1e6b":"786KC"}],"c5vgB":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$4ca8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$4ca8.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+const UserContext = /*#__PURE__*/ (0, _react.createContext)({
+    user: {
+        name: "Dummy name",
+        email: "Dummy email"
+    }
+});
+exports.default = UserContext;
+
+  $parcel$ReactRefreshHelpers$4ca8.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8yaV8":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0606 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -34447,9 +34505,12 @@ var _useRestaurants = require("../utils/useRestaurants");
 var _useRestaurantsDefault = parcelHelpers.interopDefault(_useRestaurants);
 var _useOnline = require("../utils/useOnline");
 var _useOnlineDefault = parcelHelpers.interopDefault(_useOnline);
+var _userContext = require("../utils/UserContext");
+var _userContextDefault = parcelHelpers.interopDefault(_userContext);
 var _s = $RefreshSig$();
 const Body = ()=>{
     _s();
+    const { user, setUser } = (0, _react.useContext)((0, _userContextDefault.default));
     const [searchText, setSearchText] = (0, _react.useState)("");
     const [allRestaurantList, filteredRestaurantList, setFilteredRestaurantList] = (0, _useRestaurantsDefault.default)();
     // not render the component (Early return)
@@ -34461,14 +34522,14 @@ const Body = ()=>{
                 children: "you are Offline"
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 17,
+                lineNumber: 22,
                 columnNumber: 17
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: "please check your internet connection"
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 18,
+                lineNumber: 23,
                 columnNumber: 17
             }, undefined)
         ]
@@ -34476,26 +34537,26 @@ const Body = ()=>{
     // Conditional rendering
     return allRestaurantList.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/Body.js",
-        lineNumber: 23,
+        lineNumber: 28,
         columnNumber: 43
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "search-container",
+                className: "bg-pink-50 my-1 p-4",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                         type: "text",
-                        className: "input-search",
+                        className: "border-solid border-2 border-sky-500 rounded-md mr-1",
                         placeholder: "Search",
                         value: searchText,
                         onChange: (e)=>setSearchText(e.target.value)
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 25,
+                        lineNumber: 30,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        className: "search-btn",
+                        className: "bg-purple-300 rounded-md p-1 h-7",
                         onClick: ()=>{
                             const filteredRestaurants = (0, _helper.handleSearch)(searchText, allRestaurantList);
                             setFilteredRestaurantList(filteredRestaurants);
@@ -34503,22 +34564,35 @@ const Body = ()=>{
                         children: "Search"
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 26,
+                        lineNumber: 31,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        type: "text",
+                        className: "border-solid border-2 border-sky-500 rounded-md ml-10",
+                        value: user.name,
+                        onChange: (e)=>setUser({
+                                ...user,
+                                name: e.target.value
+                            })
+                    }, void 0, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 38,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Body.js",
-                lineNumber: 24,
+                lineNumber: 29,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "body",
+                className: "flex flex-wrap justify-between",
                 children: filteredRestaurantList.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                     children: "No Restaurant is available with this search"
                 }, void 0, false, {
                     fileName: "src/components/Body.js",
-                    lineNumber: 34,
+                    lineNumber: 45,
                     columnNumber: 56
                 }, undefined) : filteredRestaurantList.map((restaurant)=>{
                     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -34527,24 +34601,24 @@ const Body = ()=>{
                             ...restaurant.info
                         }, void 0, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 35,
+                            lineNumber: 46,
                             columnNumber: 93
                         }, undefined)
                     }, restaurant.info.id, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 35,
+                        lineNumber: 46,
                         columnNumber: 16
                     }, undefined);
                 })
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 33,
+                lineNumber: 44,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true);
 };
-_s(Body, "0dy1/OW6Bbs5v4DJ1NFYs49LH84=", false, function() {
+_s(Body, "/zqRtXpNJe2yjVGpu00ss2XqCOc=", false, function() {
     return [
         (0, _useRestaurantsDefault.default),
         (0, _useOnlineDefault.default)
@@ -34560,7 +34634,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Card":"dP2hV","./Shimmer":"g6ZGj","react-router-dom":"9xmpe","../utils/helper":"3GF3D","../utils/useRestaurants":"3Dvwz","../utils/useOnline":"74Yls","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dP2hV":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Card":"dP2hV","./Shimmer":"g6ZGj","react-router-dom":"9xmpe","../utils/helper":"3GF3D","../utils/useRestaurants":"3Dvwz","../utils/useOnline":"74Yls","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/UserContext":"c5vgB"}],"dP2hV":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$c7f5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -34571,33 +34645,42 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _constants = require("../Constants");
+var _react = require("react");
+var _userContext = require("../utils/UserContext");
+var _userContextDefault = parcelHelpers.interopDefault(_userContext);
+var _s = $RefreshSig$();
 const Card = ({ ...restaurant })=>{
+    _s();
+    const { user } = (0, _react.useContext)((0, _userContextDefault.default));
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "card",
+        className: "h-[340] w-[225] border-solid border-2 border-gray-500 rounded-md m-3 bg-pink-50 ",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                className: "h-[180] w-[225]",
                 alt: "photo",
                 src: (0, _constants.IMG_CDN_LINK) + restaurant.cloudinaryImageId
             }, void 0, false, {
                 fileName: "src/components/Card.js",
-                lineNumber: 6,
+                lineNumber: 11,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card-content",
+                className: "pl-2 mt-1 pb-2",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        className: "text-md",
                         children: restaurant.name
                     }, void 0, false, {
                         fileName: "src/components/Card.js",
-                        lineNumber: 8,
+                        lineNumber: 13,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                        className: "truncate text-sm",
                         children: restaurant.cuisines.join(", ")
                     }, void 0, false, {
                         fileName: "src/components/Card.js",
-                        lineNumber: 9,
+                        lineNumber: 14,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
@@ -34607,22 +34690,46 @@ const Card = ({ ...restaurant })=>{
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Card.js",
-                        lineNumber: 10,
+                        lineNumber: 15,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: "text-red-900 text-sm",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                children: user.name
+                            }, void 0, false, {
+                                fileName: "src/components/Card.js",
+                                lineNumber: 17,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                children: user.email
+                            }, void 0, false, {
+                                fileName: "src/components/Card.js",
+                                lineNumber: 18,
+                                columnNumber: 21
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Card.js",
+                        lineNumber: 16,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Card.js",
-                lineNumber: 7,
+                lineNumber: 12,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Card.js",
-        lineNumber: 5,
+        lineNumber: 10,
         columnNumber: 10
     }, undefined);
 };
+_s(Card, "fV01W0EFhpxcsxwq9eE2kaSNZKA=");
 _c = Card;
 exports.default = Card;
 var _c;
@@ -34633,7 +34740,7 @@ $RefreshReg$(_c, "Card");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../Constants":"cGB5A","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cGB5A":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../Constants":"cGB5A","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","../utils/UserContext":"c5vgB"}],"cGB5A":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "IMG_CDN_LINK", ()=>IMG_CDN_LINK);
@@ -34643,238 +34750,238 @@ const IMG_CDN_LINK = "https://media-assets.swiggy.com/swiggy/image/upload/fl_los
 const FETCH_RESTAURANT_URL = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.60202294167309&lng=77.33847241848707&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
 const restaurants = [
     {
-        "info": {
-            "id": "608589",
-            "name": "Pizza Hut",
-            "cloudinaryImageId": "2b4f62d606d1b2bfba9ba9e5386fabb7",
-            "locality": "Pandav Nagar",
-            "areaName": "Mayur Vihar Phase 1",
-            "costForTwo": "\u20B9350 for two",
-            "cuisines": [
+        info: {
+            id: "608589",
+            name: "Pizza Hut",
+            cloudinaryImageId: "2b4f62d606d1b2bfba9ba9e5386fabb7",
+            locality: "Pandav Nagar",
+            areaName: "Mayur Vihar Phase 1",
+            costForTwo: "\u20B9350 for two",
+            cuisines: [
                 "Pizzas",
                 "Pastas"
             ],
-            "avgRating": 4,
-            "parentId": "721",
-            "avgRatingString": "4.0",
-            "totalRatingsString": "1K+",
-            "sla": {
-                "deliveryTime": 35,
-                "lastMileTravel": 1.6,
-                "serviceability": "SERVICEABLE",
-                "slaString": "30-35 mins",
-                "lastMileTravelString": "1.6 km",
-                "iconType": "ICON_TYPE_EMPTY"
+            avgRating: 4,
+            parentId: "721",
+            avgRatingString: "4.0",
+            totalRatingsString: "1K+",
+            sla: {
+                deliveryTime: 35,
+                lastMileTravel: 1.6,
+                serviceability: "SERVICEABLE",
+                slaString: "30-35 mins",
+                lastMileTravelString: "1.6 km",
+                iconType: "ICON_TYPE_EMPTY"
             },
-            "availability": {
-                "nextCloseTime": "2024-05-13 05:00:00",
-                "opened": true
+            availability: {
+                nextCloseTime: "2024-05-13 05:00:00",
+                opened: true
             },
-            "badges": {
-                "imageBadges": [
+            badges: {
+                imageBadges: [
                     {
-                        "imageId": "Rxawards/_CATEGORY-Pizza.png",
-                        "description": "Delivery!"
+                        imageId: "Rxawards/_CATEGORY-Pizza.png",
+                        description: "Delivery!"
                     }
                 ]
             },
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {
-                        "badgeObject": [
+            isOpen: true,
+            type: "F",
+            badgesV2: {
+                entityBadges: {
+                    imageBased: {
+                        badgeObject: [
                             {
-                                "attributes": {
-                                    "description": "Delivery!",
-                                    "imageId": "Rxawards/_CATEGORY-Pizza.png"
+                                attributes: {
+                                    description: "Delivery!",
+                                    imageId: "Rxawards/_CATEGORY-Pizza.png"
                                 }
                             }
                         ]
                     },
-                    "textBased": {},
-                    "textExtendedBadges": {}
+                    textBased: {},
+                    textExtendedBadges: {}
                 }
             },
-            "aggregatedDiscountInfoV3": {
-                "header": "ITEMS",
-                "subHeader": "AT \u20B9179"
+            aggregatedDiscountInfoV3: {
+                header: "ITEMS",
+                subHeader: "AT \u20B9179"
             },
-            "orderabilityCommunication": {
-                "title": {},
-                "subTitle": {},
-                "message": {},
-                "customIcon": {}
+            orderabilityCommunication: {
+                title: {},
+                subTitle: {},
+                message: {},
+                customIcon: {}
             },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
+            differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                    mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                    lottie: {},
+                    video: {}
                 }
             },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {}
+            reviewsSummary: {},
+            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            restaurantOfferPresentationInfo: {}
         },
-        "analytics": {
-            "context": "seo-data-ee612023-98bd-405a-b772-634b36250f64"
+        analytics: {
+            context: "seo-data-ee612023-98bd-405a-b772-634b36250f64"
         },
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/pizza-hut-pandav-nagar-mayur-vihar-phase-1-delhi-608589",
-            "text": "RESTAURANT_MENU",
-            "type": "WEBLINK"
+        cta: {
+            link: "https://www.swiggy.com/restaurants/pizza-hut-pandav-nagar-mayur-vihar-phase-1-delhi-608589",
+            text: "RESTAURANT_MENU",
+            type: "WEBLINK"
         },
-        "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+        widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
     },
     {
-        "info": {
-            "id": "636890",
-            "name": "Chinese Wok",
-            "cloudinaryImageId": "e0839ff574213e6f35b3899ebf1fc597",
-            "locality": "1st Phase",
-            "areaName": "Mayur Vihar",
-            "costForTwo": "\u20B9250 for two",
-            "cuisines": [
+        info: {
+            id: "636890",
+            name: "Chinese Wok",
+            cloudinaryImageId: "e0839ff574213e6f35b3899ebf1fc597",
+            locality: "1st Phase",
+            areaName: "Mayur Vihar",
+            costForTwo: "\u20B9250 for two",
+            cuisines: [
                 "Chinese",
                 "Asian",
                 "Tibetan",
                 "Desserts"
             ],
-            "avgRating": 4.2,
-            "parentId": "61955",
-            "avgRatingString": "4.2",
-            "totalRatingsString": "500+",
-            "sla": {
-                "deliveryTime": 37,
-                "lastMileTravel": 3.5,
-                "serviceability": "SERVICEABLE",
-                "slaString": "35-40 mins",
-                "lastMileTravelString": "3.5 km",
-                "iconType": "ICON_TYPE_EMPTY"
+            avgRating: 4.2,
+            parentId: "61955",
+            avgRatingString: "4.2",
+            totalRatingsString: "500+",
+            sla: {
+                deliveryTime: 37,
+                lastMileTravel: 3.5,
+                serviceability: "SERVICEABLE",
+                slaString: "35-40 mins",
+                lastMileTravelString: "3.5 km",
+                iconType: "ICON_TYPE_EMPTY"
             },
-            "availability": {
-                "nextCloseTime": "2024-05-13 03:00:00",
-                "opened": true
+            availability: {
+                nextCloseTime: "2024-05-13 03:00:00",
+                opened: true
             },
-            "badges": {},
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {},
-                    "textBased": {},
-                    "textExtendedBadges": {}
+            badges: {},
+            isOpen: true,
+            type: "F",
+            badgesV2: {
+                entityBadges: {
+                    imageBased: {},
+                    textBased: {},
+                    textExtendedBadges: {}
                 }
             },
-            "aggregatedDiscountInfoV3": {
-                "header": "ITEMS",
-                "subHeader": "AT \u20B9189"
+            aggregatedDiscountInfoV3: {
+                header: "ITEMS",
+                subHeader: "AT \u20B9189"
             },
-            "orderabilityCommunication": {
-                "title": {},
-                "subTitle": {},
-                "message": {},
-                "customIcon": {}
+            orderabilityCommunication: {
+                title: {},
+                subTitle: {},
+                message: {},
+                customIcon: {}
             },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
+            differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                    mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                    lottie: {},
+                    video: {}
                 }
             },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {}
+            reviewsSummary: {},
+            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            restaurantOfferPresentationInfo: {}
         },
-        "analytics": {
-            "context": "seo-data-ee612023-98bd-405a-b772-634b36250f64"
+        analytics: {
+            context: "seo-data-ee612023-98bd-405a-b772-634b36250f64"
         },
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/chinese-wok-1st-phase-mayur-vihar-delhi-636890",
-            "text": "RESTAURANT_MENU",
-            "type": "WEBLINK"
+        cta: {
+            link: "https://www.swiggy.com/restaurants/chinese-wok-1st-phase-mayur-vihar-delhi-636890",
+            text: "RESTAURANT_MENU",
+            type: "WEBLINK"
         },
-        "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+        widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
     },
     {
-        "info": {
-            "id": "781551",
-            "name": "Mehfil",
-            "cloudinaryImageId": "a0126ed01c247a281cbfec8219707de9",
-            "locality": "Shakarpur",
-            "areaName": "Laxmi Nagar",
-            "costForTwo": "\u20B9350 for two",
-            "cuisines": [
+        info: {
+            id: "781551",
+            name: "Mehfil",
+            cloudinaryImageId: "a0126ed01c247a281cbfec8219707de9",
+            locality: "Shakarpur",
+            areaName: "Laxmi Nagar",
+            costForTwo: "\u20B9350 for two",
+            cuisines: [
                 "Indian"
             ],
-            "avgRating": 4.2,
-            "parentId": "637",
-            "avgRatingString": "4.2",
-            "totalRatingsString": "3",
-            "sla": {
-                "deliveryTime": 45,
-                "lastMileTravel": 3.7,
-                "serviceability": "SERVICEABLE",
-                "slaString": "45-50 mins",
-                "lastMileTravelString": "3.7 km",
-                "iconType": "ICON_TYPE_EMPTY"
+            avgRating: 4.2,
+            parentId: "637",
+            avgRatingString: "4.2",
+            totalRatingsString: "3",
+            sla: {
+                deliveryTime: 45,
+                lastMileTravel: 3.7,
+                serviceability: "SERVICEABLE",
+                slaString: "45-50 mins",
+                lastMileTravelString: "3.7 km",
+                iconType: "ICON_TYPE_EMPTY"
             },
-            "availability": {
-                "nextCloseTime": "2024-05-12 22:30:00",
-                "opened": true
+            availability: {
+                nextCloseTime: "2024-05-12 22:30:00",
+                opened: true
             },
-            "badges": {},
-            "isOpen": true,
-            "aggregatedDiscountInfoV2": {},
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {},
-                    "textBased": {},
-                    "textExtendedBadges": {}
+            badges: {},
+            isOpen: true,
+            aggregatedDiscountInfoV2: {},
+            type: "F",
+            badgesV2: {
+                entityBadges: {
+                    imageBased: {},
+                    textBased: {},
+                    textExtendedBadges: {}
                 }
             },
-            "orderabilityCommunication": {
-                "title": {},
-                "subTitle": {},
-                "message": {},
-                "customIcon": {}
+            orderabilityCommunication: {
+                title: {},
+                subTitle: {},
+                message: {},
+                customIcon: {}
             },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
+            differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                    mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                    lottie: {},
+                    video: {}
                 }
             },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {}
+            reviewsSummary: {},
+            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            restaurantOfferPresentationInfo: {}
         },
-        "analytics": {
-            "context": "seo-data-ee612023-98bd-405a-b772-634b36250f64"
+        analytics: {
+            context: "seo-data-ee612023-98bd-405a-b772-634b36250f64"
         },
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/mehfil-shakarpur-laxmi-nagar-delhi-781551",
-            "text": "RESTAURANT_MENU",
-            "type": "WEBLINK"
+        cta: {
+            link: "https://www.swiggy.com/restaurants/mehfil-shakarpur-laxmi-nagar-delhi-781551",
+            text: "RESTAURANT_MENU",
+            type: "WEBLINK"
         },
-        "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+        widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
     },
     {
-        "info": {
-            "id": "622567",
-            "name": "UBQ by Barbeque Nation",
-            "cloudinaryImageId": "qxq42n8xxlydk0o6p0hx",
-            "locality": "V3S Mall",
-            "areaName": "Laxmi Nagar",
-            "costForTwo": "\u20B9300 for two",
-            "cuisines": [
+        info: {
+            id: "622567",
+            name: "UBQ by Barbeque Nation",
+            cloudinaryImageId: "qxq42n8xxlydk0o6p0hx",
+            locality: "V3S Mall",
+            areaName: "Laxmi Nagar",
+            costForTwo: "\u20B9300 for two",
+            cuisines: [
                 "North Indian",
                 "Barbecue",
                 "Biryani",
@@ -34882,73 +34989,73 @@ const restaurants = [
                 "Mughlai",
                 "Desserts"
             ],
-            "avgRating": 3.5,
-            "parentId": "10804",
-            "avgRatingString": "3.5",
-            "totalRatingsString": "100+",
-            "sla": {
-                "deliveryTime": 52,
-                "lastMileTravel": 4.8,
-                "serviceability": "SERVICEABLE",
-                "slaString": "50-55 mins",
-                "lastMileTravelString": "4.8 km",
-                "iconType": "ICON_TYPE_EMPTY"
+            avgRating: 3.5,
+            parentId: "10804",
+            avgRatingString: "3.5",
+            totalRatingsString: "100+",
+            sla: {
+                deliveryTime: 52,
+                lastMileTravel: 4.8,
+                serviceability: "SERVICEABLE",
+                slaString: "50-55 mins",
+                lastMileTravelString: "4.8 km",
+                iconType: "ICON_TYPE_EMPTY"
             },
-            "availability": {
-                "nextCloseTime": "2024-05-12 23:30:00",
-                "opened": true
+            availability: {
+                nextCloseTime: "2024-05-12 23:30:00",
+                opened: true
             },
-            "badges": {},
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {},
-                    "textBased": {},
-                    "textExtendedBadges": {}
+            badges: {},
+            isOpen: true,
+            type: "F",
+            badgesV2: {
+                entityBadges: {
+                    imageBased: {},
+                    textBased: {},
+                    textExtendedBadges: {}
                 }
             },
-            "aggregatedDiscountInfoV3": {
-                "header": "50% OFF",
-                "subHeader": "UPTO \u20B9100"
+            aggregatedDiscountInfoV3: {
+                header: "50% OFF",
+                subHeader: "UPTO \u20B9100"
             },
-            "orderabilityCommunication": {
-                "title": {},
-                "subTitle": {},
-                "message": {},
-                "customIcon": {}
+            orderabilityCommunication: {
+                title: {},
+                subTitle: {},
+                message: {},
+                customIcon: {}
             },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
+            differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                    mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                    lottie: {},
+                    video: {}
                 }
             },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {}
+            reviewsSummary: {},
+            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            restaurantOfferPresentationInfo: {}
         },
-        "analytics": {
-            "context": "seo-data-ee612023-98bd-405a-b772-634b36250f64"
+        analytics: {
+            context: "seo-data-ee612023-98bd-405a-b772-634b36250f64"
         },
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/ubq-by-barbeque-nation-v3s-mall-laxmi-nagar-delhi-622567",
-            "text": "RESTAURANT_MENU",
-            "type": "WEBLINK"
+        cta: {
+            link: "https://www.swiggy.com/restaurants/ubq-by-barbeque-nation-v3s-mall-laxmi-nagar-delhi-622567",
+            text: "RESTAURANT_MENU",
+            type: "WEBLINK"
         },
-        "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+        widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
     },
     {
-        "info": {
-            "id": "622566",
-            "name": "Barbeque Nation",
-            "cloudinaryImageId": "u1ogaoytsj6ddc624mw0",
-            "locality": "V3S Mall",
-            "areaName": "Laxmi Nagar",
-            "costForTwo": "\u20B9600 for two",
-            "cuisines": [
+        info: {
+            id: "622566",
+            name: "Barbeque Nation",
+            cloudinaryImageId: "u1ogaoytsj6ddc624mw0",
+            locality: "V3S Mall",
+            areaName: "Laxmi Nagar",
+            costForTwo: "\u20B9600 for two",
+            cuisines: [
                 "North Indian",
                 "Barbecue",
                 "Biryani",
@@ -34956,438 +35063,438 @@ const restaurants = [
                 "Mughlai",
                 "Desserts"
             ],
-            "avgRating": 3.4,
-            "parentId": "2438",
-            "avgRatingString": "3.4",
-            "totalRatingsString": "100+",
-            "sla": {
-                "deliveryTime": 53,
-                "lastMileTravel": 4.8,
-                "serviceability": "SERVICEABLE",
-                "slaString": "50-55 mins",
-                "lastMileTravelString": "4.8 km",
-                "iconType": "ICON_TYPE_EMPTY"
+            avgRating: 3.4,
+            parentId: "2438",
+            avgRatingString: "3.4",
+            totalRatingsString: "100+",
+            sla: {
+                deliveryTime: 53,
+                lastMileTravel: 4.8,
+                serviceability: "SERVICEABLE",
+                slaString: "50-55 mins",
+                lastMileTravelString: "4.8 km",
+                iconType: "ICON_TYPE_EMPTY"
             },
-            "availability": {
-                "nextCloseTime": "2024-05-12 23:30:00",
-                "opened": true
+            availability: {
+                nextCloseTime: "2024-05-12 23:30:00",
+                opened: true
             },
-            "badges": {},
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {},
-                    "textBased": {},
-                    "textExtendedBadges": {}
+            badges: {},
+            isOpen: true,
+            type: "F",
+            badgesV2: {
+                entityBadges: {
+                    imageBased: {},
+                    textBased: {},
+                    textExtendedBadges: {}
                 }
             },
-            "aggregatedDiscountInfoV3": {
-                "header": "50% OFF",
-                "subHeader": "UPTO \u20B990"
+            aggregatedDiscountInfoV3: {
+                header: "50% OFF",
+                subHeader: "UPTO \u20B990"
             },
-            "orderabilityCommunication": {
-                "title": {},
-                "subTitle": {},
-                "message": {},
-                "customIcon": {}
+            orderabilityCommunication: {
+                title: {},
+                subTitle: {},
+                message: {},
+                customIcon: {}
             },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
+            differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                    mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                    lottie: {},
+                    video: {}
                 }
             },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {}
+            reviewsSummary: {},
+            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            restaurantOfferPresentationInfo: {}
         },
-        "analytics": {
-            "context": "seo-data-ee612023-98bd-405a-b772-634b36250f64"
+        analytics: {
+            context: "seo-data-ee612023-98bd-405a-b772-634b36250f64"
         },
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/barbeque-nation-v3s-mall-laxmi-nagar-delhi-622566",
-            "text": "RESTAURANT_MENU",
-            "type": "WEBLINK"
+        cta: {
+            link: "https://www.swiggy.com/restaurants/barbeque-nation-v3s-mall-laxmi-nagar-delhi-622566",
+            text: "RESTAURANT_MENU",
+            type: "WEBLINK"
         },
-        "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+        widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
     },
     {
-        "info": {
-            "id": "701718",
-            "name": "BOOM Sandwich - Sub of India",
-            "cloudinaryImageId": "96aaf72372ad1b0297b7cc304ced7e33",
-            "locality": "Pandav Nagar Road",
-            "areaName": "Mayur Vihar Phase1",
-            "costForTwo": "\u20B9250 for two",
-            "cuisines": [
+        info: {
+            id: "701718",
+            name: "BOOM Sandwich - Sub of India",
+            cloudinaryImageId: "96aaf72372ad1b0297b7cc304ced7e33",
+            locality: "Pandav Nagar Road",
+            areaName: "Mayur Vihar Phase1",
+            costForTwo: "\u20B9250 for two",
+            cuisines: [
                 "Snacks",
                 "Indian",
                 "Desserts"
             ],
-            "avgRating": 4.3,
-            "parentId": "401169",
-            "avgRatingString": "4.3",
-            "totalRatingsString": "100+",
-            "sla": {
-                "deliveryTime": 25,
-                "lastMileTravel": 1.4,
-                "serviceability": "SERVICEABLE",
-                "slaString": "20-30 mins",
-                "lastMileTravelString": "1.4 km",
-                "iconType": "ICON_TYPE_EMPTY"
+            avgRating: 4.3,
+            parentId: "401169",
+            avgRatingString: "4.3",
+            totalRatingsString: "100+",
+            sla: {
+                deliveryTime: 25,
+                lastMileTravel: 1.4,
+                serviceability: "SERVICEABLE",
+                slaString: "20-30 mins",
+                lastMileTravelString: "1.4 km",
+                iconType: "ICON_TYPE_EMPTY"
             },
-            "availability": {
-                "nextCloseTime": "2024-05-13 02:00:00",
-                "opened": true
+            availability: {
+                nextCloseTime: "2024-05-13 02:00:00",
+                opened: true
             },
-            "badges": {
-                "textExtendedBadges": [
+            badges: {
+                textExtendedBadges: [
                     {
-                        "iconId": "guiltfree/GF_Logo_android_3x",
-                        "shortDescription": "options available",
-                        "fontColor": "#7E808C"
+                        iconId: "guiltfree/GF_Logo_android_3x",
+                        shortDescription: "options available",
+                        fontColor: "#7E808C"
                     }
                 ]
             },
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {},
-                    "textBased": {},
-                    "textExtendedBadges": {
-                        "badgeObject": [
+            isOpen: true,
+            type: "F",
+            badgesV2: {
+                entityBadges: {
+                    imageBased: {},
+                    textBased: {},
+                    textExtendedBadges: {
+                        badgeObject: [
                             {
-                                "attributes": {
-                                    "description": "",
-                                    "fontColor": "#7E808C",
-                                    "iconId": "guiltfree/GF_Logo_android_3x",
-                                    "shortDescription": "options available"
+                                attributes: {
+                                    description: "",
+                                    fontColor: "#7E808C",
+                                    iconId: "guiltfree/GF_Logo_android_3x",
+                                    shortDescription: "options available"
                                 }
                             }
                         ]
                     }
                 }
             },
-            "aggregatedDiscountInfoV3": {
-                "header": "50% OFF",
-                "subHeader": "UPTO \u20B990"
+            aggregatedDiscountInfoV3: {
+                header: "50% OFF",
+                subHeader: "UPTO \u20B990"
             },
-            "orderabilityCommunication": {
-                "title": {},
-                "subTitle": {},
-                "message": {},
-                "customIcon": {}
+            orderabilityCommunication: {
+                title: {},
+                subTitle: {},
+                message: {},
+                customIcon: {}
             },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
+            differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                    mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                    lottie: {},
+                    video: {}
                 }
             },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {}
+            reviewsSummary: {},
+            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            restaurantOfferPresentationInfo: {}
         },
-        "analytics": {
-            "context": "seo-data-ee612023-98bd-405a-b772-634b36250f64"
+        analytics: {
+            context: "seo-data-ee612023-98bd-405a-b772-634b36250f64"
         },
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/boom-sandwich-sub-of-india-pandav-nagar-road-mayur-vihar-phase1-delhi-701718",
-            "text": "RESTAURANT_MENU",
-            "type": "WEBLINK"
+        cta: {
+            link: "https://www.swiggy.com/restaurants/boom-sandwich-sub-of-india-pandav-nagar-road-mayur-vihar-phase1-delhi-701718",
+            text: "RESTAURANT_MENU",
+            type: "WEBLINK"
         },
-        "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+        widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
     },
     {
-        "info": {
-            "id": "707692",
-            "name": "KFC",
-            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/4/17/8ba01310-e5b7-4a90-bef3-98a10bc91238_707692.JPG",
-            "locality": "Phase 1",
-            "areaName": "Mayur Vihar",
-            "costForTwo": "\u20B9400 for two",
-            "cuisines": [
+        info: {
+            id: "707692",
+            name: "KFC",
+            cloudinaryImageId: "RX_THUMBNAIL/IMAGES/VENDOR/2024/4/17/8ba01310-e5b7-4a90-bef3-98a10bc91238_707692.JPG",
+            locality: "Phase 1",
+            areaName: "Mayur Vihar",
+            costForTwo: "\u20B9400 for two",
+            cuisines: [
                 "Burgers",
                 "Biryani",
                 "American",
                 "Snacks",
                 "Fast Food"
             ],
-            "avgRating": 4.3,
-            "parentId": "547",
-            "avgRatingString": "4.3",
-            "totalRatingsString": "500+",
-            "sla": {
-                "deliveryTime": 34,
-                "lastMileTravel": 3.5,
-                "serviceability": "SERVICEABLE",
-                "slaString": "30-35 mins",
-                "lastMileTravelString": "3.5 km",
-                "iconType": "ICON_TYPE_EMPTY"
+            avgRating: 4.3,
+            parentId: "547",
+            avgRatingString: "4.3",
+            totalRatingsString: "500+",
+            sla: {
+                deliveryTime: 34,
+                lastMileTravel: 3.5,
+                serviceability: "SERVICEABLE",
+                slaString: "30-35 mins",
+                lastMileTravelString: "3.5 km",
+                iconType: "ICON_TYPE_EMPTY"
             },
-            "availability": {
-                "nextCloseTime": "2024-05-13 01:00:00",
-                "opened": true
+            availability: {
+                nextCloseTime: "2024-05-13 01:00:00",
+                opened: true
             },
-            "badges": {
-                "imageBadges": [
+            badges: {
+                imageBadges: [
                     {
-                        "imageId": "Rxawards/_CATEGORY-Burger.png",
-                        "description": "Delivery!"
+                        imageId: "Rxawards/_CATEGORY-Burger.png",
+                        description: "Delivery!"
                     }
                 ]
             },
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {
-                        "badgeObject": [
+            isOpen: true,
+            type: "F",
+            badgesV2: {
+                entityBadges: {
+                    imageBased: {
+                        badgeObject: [
                             {
-                                "attributes": {
-                                    "description": "Delivery!",
-                                    "imageId": "Rxawards/_CATEGORY-Burger.png"
+                                attributes: {
+                                    description: "Delivery!",
+                                    imageId: "Rxawards/_CATEGORY-Burger.png"
                                 }
                             }
                         ]
                     },
-                    "textBased": {},
-                    "textExtendedBadges": {}
+                    textBased: {},
+                    textExtendedBadges: {}
                 }
             },
-            "aggregatedDiscountInfoV3": {
-                "header": "40% OFF",
-                "subHeader": "UPTO \u20B980"
+            aggregatedDiscountInfoV3: {
+                header: "40% OFF",
+                subHeader: "UPTO \u20B980"
             },
-            "orderabilityCommunication": {
-                "title": {},
-                "subTitle": {},
-                "message": {},
-                "customIcon": {}
+            orderabilityCommunication: {
+                title: {},
+                subTitle: {},
+                message: {},
+                customIcon: {}
             },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
+            differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                    mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                    lottie: {},
+                    video: {}
                 }
             },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {}
+            reviewsSummary: {},
+            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            restaurantOfferPresentationInfo: {}
         },
-        "analytics": {
-            "context": "seo-data-ee612023-98bd-405a-b772-634b36250f64"
+        analytics: {
+            context: "seo-data-ee612023-98bd-405a-b772-634b36250f64"
         },
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/kfc-phase-1-mayur-vihar-delhi-707692",
-            "text": "RESTAURANT_MENU",
-            "type": "WEBLINK"
+        cta: {
+            link: "https://www.swiggy.com/restaurants/kfc-phase-1-mayur-vihar-delhi-707692",
+            text: "RESTAURANT_MENU",
+            type: "WEBLINK"
         },
-        "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+        widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
     },
     {
-        "info": {
-            "id": "462638",
-            "name": "Domino's Pizza",
-            "cloudinaryImageId": "d0450ce1a6ba19ea60cd724471ed54a8",
-            "locality": "2nd Phase",
-            "areaName": "Mayur Vihar",
-            "costForTwo": "\u20B9400 for two",
-            "cuisines": [
+        info: {
+            id: "462638",
+            name: "Domino's Pizza",
+            cloudinaryImageId: "d0450ce1a6ba19ea60cd724471ed54a8",
+            locality: "2nd Phase",
+            areaName: "Mayur Vihar",
+            costForTwo: "\u20B9400 for two",
+            cuisines: [
                 "Pizzas",
                 "Italian",
                 "Pastas",
                 "Desserts"
             ],
-            "avgRating": 4.5,
-            "parentId": "2456",
-            "avgRatingString": "4.5",
-            "totalRatingsString": "1K+",
-            "sla": {
-                "deliveryTime": 25,
-                "lastMileTravel": 2.9,
-                "serviceability": "SERVICEABLE",
-                "slaString": "25 mins",
-                "lastMileTravelString": "2.9 km",
-                "iconType": "ICON_TYPE_EMPTY"
+            avgRating: 4.5,
+            parentId: "2456",
+            avgRatingString: "4.5",
+            totalRatingsString: "1K+",
+            sla: {
+                deliveryTime: 25,
+                lastMileTravel: 2.9,
+                serviceability: "SERVICEABLE",
+                slaString: "25 mins",
+                lastMileTravelString: "2.9 km",
+                iconType: "ICON_TYPE_EMPTY"
             },
-            "availability": {
-                "nextCloseTime": "2024-05-13 02:59:00",
-                "opened": true
+            availability: {
+                nextCloseTime: "2024-05-13 02:59:00",
+                opened: true
             },
-            "badges": {
-                "imageBadges": [
+            badges: {
+                imageBadges: [
                     {
-                        "imageId": "Rxawards/_CATEGORY-Pizza.png",
-                        "description": "Delivery!"
+                        imageId: "Rxawards/_CATEGORY-Pizza.png",
+                        description: "Delivery!"
                     }
                 ]
             },
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {
-                        "badgeObject": [
+            isOpen: true,
+            type: "F",
+            badgesV2: {
+                entityBadges: {
+                    imageBased: {
+                        badgeObject: [
                             {
-                                "attributes": {
-                                    "description": "Delivery!",
-                                    "imageId": "Rxawards/_CATEGORY-Pizza.png"
+                                attributes: {
+                                    description: "Delivery!",
+                                    imageId: "Rxawards/_CATEGORY-Pizza.png"
                                 }
                             }
                         ]
                     },
-                    "textBased": {},
-                    "textExtendedBadges": {}
+                    textBased: {},
+                    textExtendedBadges: {}
                 }
             },
-            "aggregatedDiscountInfoV3": {
-                "header": "\u20B9150 OFF",
-                "subHeader": "ABOVE \u20B9299",
-                "discountTag": "FLAT DEAL"
+            aggregatedDiscountInfoV3: {
+                header: "\u20B9150 OFF",
+                subHeader: "ABOVE \u20B9299",
+                discountTag: "FLAT DEAL"
             },
-            "orderabilityCommunication": {
-                "title": {},
-                "subTitle": {},
-                "message": {},
-                "customIcon": {}
+            orderabilityCommunication: {
+                title: {},
+                subTitle: {},
+                message: {},
+                customIcon: {}
             },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
+            differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                    mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                    lottie: {},
+                    video: {}
                 }
             },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {}
+            reviewsSummary: {},
+            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            restaurantOfferPresentationInfo: {}
         },
-        "analytics": {
-            "context": "seo-data-ee612023-98bd-405a-b772-634b36250f64"
+        analytics: {
+            context: "seo-data-ee612023-98bd-405a-b772-634b36250f64"
         },
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/dominos-pizza-2nd-phase-mayur-vihar-delhi-462638",
-            "text": "RESTAURANT_MENU",
-            "type": "WEBLINK"
+        cta: {
+            link: "https://www.swiggy.com/restaurants/dominos-pizza-2nd-phase-mayur-vihar-delhi-462638",
+            text: "RESTAURANT_MENU",
+            type: "WEBLINK"
         },
-        "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+        widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
     },
     {
-        "info": {
-            "id": "538609",
-            "name": "Great Indian Khichdi by EatFit",
-            "cloudinaryImageId": "6e44fd7f1e5cd9967edfe47c10247671",
-            "locality": "East Vinod nagar",
-            "areaName": "Patparganj",
-            "costForTwo": "\u20B9200 for two",
-            "cuisines": [
+        info: {
+            id: "538609",
+            name: "Great Indian Khichdi by EatFit",
+            cloudinaryImageId: "6e44fd7f1e5cd9967edfe47c10247671",
+            locality: "East Vinod nagar",
+            areaName: "Patparganj",
+            costForTwo: "\u20B9200 for two",
+            cuisines: [
                 "Indian",
                 "Home Food",
                 "Healthy Food",
                 "Snacks"
             ],
-            "avgRating": 4.6,
-            "veg": true,
-            "parentId": "319582",
-            "avgRatingString": "4.6",
-            "totalRatingsString": "1K+",
-            "sla": {
-                "deliveryTime": 33,
-                "lastMileTravel": 2.5,
-                "serviceability": "SERVICEABLE",
-                "slaString": "30-35 mins",
-                "lastMileTravelString": "2.5 km",
-                "iconType": "ICON_TYPE_EMPTY"
+            avgRating: 4.6,
+            veg: true,
+            parentId: "319582",
+            avgRatingString: "4.6",
+            totalRatingsString: "1K+",
+            sla: {
+                deliveryTime: 33,
+                lastMileTravel: 2.5,
+                serviceability: "SERVICEABLE",
+                slaString: "30-35 mins",
+                lastMileTravelString: "2.5 km",
+                iconType: "ICON_TYPE_EMPTY"
             },
-            "availability": {
-                "nextCloseTime": "2024-05-13 00:00:00",
-                "opened": true
+            availability: {
+                nextCloseTime: "2024-05-13 00:00:00",
+                opened: true
             },
-            "badges": {
-                "imageBadges": [
+            badges: {
+                imageBadges: [
                     {
-                        "imageId": "v1695133679/badges/Pure_Veg111.png",
-                        "description": "pureveg"
+                        imageId: "v1695133679/badges/Pure_Veg111.png",
+                        description: "pureveg"
                     }
                 ],
-                "textExtendedBadges": [
+                textExtendedBadges: [
                     {
-                        "iconId": "guiltfree/GF_Logo_android_3x",
-                        "shortDescription": "brand",
-                        "fontColor": "#7E808C"
+                        iconId: "guiltfree/GF_Logo_android_3x",
+                        shortDescription: "brand",
+                        fontColor: "#7E808C"
                     }
                 ]
             },
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {
-                        "badgeObject": [
+            isOpen: true,
+            type: "F",
+            badgesV2: {
+                entityBadges: {
+                    imageBased: {
+                        badgeObject: [
                             {
-                                "attributes": {
-                                    "description": "pureveg",
-                                    "imageId": "v1695133679/badges/Pure_Veg111.png"
+                                attributes: {
+                                    description: "pureveg",
+                                    imageId: "v1695133679/badges/Pure_Veg111.png"
                                 }
                             }
                         ]
                     },
-                    "textBased": {},
-                    "textExtendedBadges": {
-                        "badgeObject": [
+                    textBased: {},
+                    textExtendedBadges: {
+                        badgeObject: [
                             {
-                                "attributes": {
-                                    "description": "",
-                                    "fontColor": "#7E808C",
-                                    "iconId": "guiltfree/GF_Logo_android_3x",
-                                    "shortDescription": "brand"
+                                attributes: {
+                                    description: "",
+                                    fontColor: "#7E808C",
+                                    iconId: "guiltfree/GF_Logo_android_3x",
+                                    shortDescription: "brand"
                                 }
                             }
                         ]
                     }
                 }
             },
-            "aggregatedDiscountInfoV3": {
-                "header": "60% OFF",
-                "subHeader": "UPTO \u20B9120"
+            aggregatedDiscountInfoV3: {
+                header: "60% OFF",
+                subHeader: "UPTO \u20B9120"
             },
-            "orderabilityCommunication": {
-                "title": {},
-                "subTitle": {},
-                "message": {},
-                "customIcon": {}
+            orderabilityCommunication: {
+                title: {},
+                subTitle: {},
+                message: {},
+                customIcon: {}
             },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
+            differentiatedUi: {
+                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                differentiatedUiMediaDetails: {
+                    mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                    lottie: {},
+                    video: {}
                 }
             },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {}
+            reviewsSummary: {},
+            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            restaurantOfferPresentationInfo: {}
         },
-        "analytics": {
-            "context": "seo-data-ee612023-98bd-405a-b772-634b36250f64"
+        analytics: {
+            context: "seo-data-ee612023-98bd-405a-b772-634b36250f64"
         },
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/great-indian-khichdi-by-eatfit-east-vinod-nagar-patparganj-delhi-538609",
-            "text": "RESTAURANT_MENU",
-            "type": "WEBLINK"
+        cta: {
+            link: "https://www.swiggy.com/restaurants/great-indian-khichdi-by-eatfit-east-vinod-nagar-patparganj-delhi-538609",
+            text: "RESTAURANT_MENU",
+            type: "WEBLINK"
         },
-        "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+        widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
     }
 ];
 
@@ -35404,80 +35511,64 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _shimmerCss = require("./shimmer.css");
 const Shimmer = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "search-div"
-            }, void 0, false, {
-                fileName: "src/components/Shimmer.js",
-                lineNumber: 4,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "button-div"
-            }, void 0, false, {
-                fileName: "src/components/Shimmer.js",
-                lineNumber: 5,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "body",
-                children: Array.from({
-                    length: 10
-                }).map((el, idx)=>{
-                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "card",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "img-container"
-                            }, void 0, false, {
-                                fileName: "src/components/Shimmer.js",
-                                lineNumber: 11,
-                                columnNumber: 29
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "card-content",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "div-1"
-                                    }, void 0, false, {
-                                        fileName: "src/components/Shimmer.js",
-                                        lineNumber: 13,
-                                        columnNumber: 33
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "div-2"
-                                    }, void 0, false, {
-                                        fileName: "src/components/Shimmer.js",
-                                        lineNumber: 14,
-                                        columnNumber: 33
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "div-3"
-                                    }, void 0, false, {
-                                        fileName: "src/components/Shimmer.js",
-                                        lineNumber: 15,
-                                        columnNumber: 33
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/components/Shimmer.js",
-                                lineNumber: 12,
-                                columnNumber: 29
-                            }, undefined)
-                        ]
-                    }, idx, true, {
-                        fileName: "src/components/Shimmer.js",
-                        lineNumber: 10,
-                        columnNumber: 16
-                    }, undefined);
-                })
-            }, void 0, false, {
-                fileName: "src/components/Shimmer.js",
-                lineNumber: 6,
-                columnNumber: 9
-            }, undefined)
-        ]
-    }, void 0, true);
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "flex flex-wrap justify-between",
+            children: Array.from({
+                length: 10
+            }).map((el, idx)=>{
+                return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "h-[300] w-[225] border-solid border-2 border-gray-500 rounded-md m-3 bg-pink-50",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "h-[180] w-[225]"
+                        }, void 0, false, {
+                            fileName: "src/components/Shimmer.js",
+                            lineNumber: 9,
+                            columnNumber: 29
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "pl-2 mt-1",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "div-1"
+                                }, void 0, false, {
+                                    fileName: "src/components/Shimmer.js",
+                                    lineNumber: 11,
+                                    columnNumber: 33
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "div-2"
+                                }, void 0, false, {
+                                    fileName: "src/components/Shimmer.js",
+                                    lineNumber: 12,
+                                    columnNumber: 33
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "div-3"
+                                }, void 0, false, {
+                                    fileName: "src/components/Shimmer.js",
+                                    lineNumber: 13,
+                                    columnNumber: 33
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Shimmer.js",
+                            lineNumber: 10,
+                            columnNumber: 29
+                        }, undefined)
+                    ]
+                }, idx, true, {
+                    fileName: "src/components/Shimmer.js",
+                    lineNumber: 8,
+                    columnNumber: 16
+                }, undefined);
+            })
+        }, void 0, false, {
+            fileName: "src/components/Shimmer.js",
+            lineNumber: 4,
+            columnNumber: 9
+        }, undefined)
+    }, void 0, false);
 };
 _c = Shimmer;
 exports.default = Shimmer;
@@ -35586,7 +35677,7 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 const Footer = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "footer",
+        className: "bg-gray-700 flex justify-center text-white",
         children: "Copyrights , T&C"
     }, void 0, false, {
         fileName: "src/components/Footer.js",

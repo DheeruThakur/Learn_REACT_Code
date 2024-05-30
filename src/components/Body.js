@@ -1,13 +1,16 @@
-import { useState } from "react"
+import { useState , useContext} from "react"
 import Card from "./Card"
 import Shimmer from "./Shimmer"
 import { Link } from "react-router-dom"
 import { handleSearch } from "../utils/helper"
 import useRestaurants from "../utils/useRestaurants"
 import useOnline from "../utils/useOnline"
+import UserContext from "../utils/UserContext"
 
 
 const Body = () => {
+
+    const {user , setUser} = useContext(UserContext);
     const [searchText , setSearchText] = useState("")
 
     const [allRestaurantList , filteredRestaurantList , setFilteredRestaurantList] = useRestaurants();
@@ -29,22 +32,30 @@ const Body = () => {
     // Conditional rendering
     return (allRestaurantList.length === 0) ? <Shimmer /> : (
         <>
-            <div className="search-container">
+            <div className="bg-pink-50 my-1 p-4">
                 <input
                     type="text"
-                    className="input-search"
+                    className="border-solid border-2 border-sky-500 rounded-md mr-1"
                     placeholder="Search"
                     value={searchText}
                     onChange={(e) => setSearchText(e.target.value)}
                 />
-                <button className="search-btn" onClick={() => {
+                <button className="bg-purple-300 rounded-md p-1 h-7" onClick={() => {
                     const filteredRestaurants = handleSearch(searchText , allRestaurantList)
                     setFilteredRestaurantList(filteredRestaurants)
                 }}>
                     Search
                 </button>
+
+                <input
+                    type="text"
+                    className="border-solid border-2 border-sky-500 rounded-md ml-10"
+                    value={user.name}
+                    onChange={(e) => setUser({...user , name : e.target.value})}
+                />
             </div>
-            <div className="body">
+            
+            <div className="flex flex-wrap justify-between">
                 {   (filteredRestaurantList.length === 0) ? <h1>No Restaurant is available with this search</h1>
                     : filteredRestaurantList.map(restaurant => {
                         return (
