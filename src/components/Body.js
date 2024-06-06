@@ -10,7 +10,7 @@ import UserContext from "../utils/UserContext"
 
 const Body = () => {
 
-    const {user , setUser} = useContext(UserContext);
+    // const {user , setUser} = useContext(UserContext);
     const [searchText , setSearchText] = useState("")
 
     const [allRestaurantList , filteredRestaurantList , setFilteredRestaurantList] = useRestaurants();
@@ -34,28 +34,29 @@ const Body = () => {
         <>
             <div className="bg-pink-50 my-1 p-4">
                 <input
+                    data-testid="search-input"
                     type="text"
                     className="border-solid border-2 border-sky-500 rounded-md mr-1"
                     placeholder="Search"
                     value={searchText}
                     onChange={(e) => setSearchText(e.target.value)}
                 />
-                <button className="bg-purple-300 rounded-md p-1 h-7" onClick={() => {
+                <button data-testid="search-btn" className="bg-purple-300 rounded-md p-1 h-7" onClick={() => {
                     const filteredRestaurants = handleSearch(searchText , allRestaurantList)
                     setFilteredRestaurantList(filteredRestaurants)
                 }}>
                     Search
                 </button>
 
-                <input
+                {/* <input
                     type="text"
                     className="border-solid border-2 border-sky-500 rounded-md ml-10"
                     value={user.name}
                     onChange={(e) => setUser({...user , name : e.target.value})}
-                />
+                /> */}
             </div>
             
-            <div className="flex flex-wrap justify-between">
+            <div className="flex flex-wrap justify-between" data-testid="res-list">
                 {   (filteredRestaurantList.length === 0) ? <h1>No Restaurant is available with this search</h1>
                     : filteredRestaurantList.map(restaurant => {
                         return (

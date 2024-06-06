@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <div className="bg-gray-700 flex justify-center text-white">
+        <div data-testid="footer" className="bg-gray-700 flex justify-center text-white">
             Copyrights , T&C
         </div>
     )

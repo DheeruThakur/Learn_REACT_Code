@@ -611,121 +611,81 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$8238.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _s = $RefreshSig$();
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = require("a59def013504367");
+var _jsxRuntime = require("eee1b7e9fb7b21db");
 const Section = ({ name, description, isVisible, setIsVisible })=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+    return /*#__PURE__*/ (0, _jsxRuntime.jsx)(_jsxRuntime.Fragment, {
+        children: /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
             className: "border border-solid border-black m-2 p-2",
             children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                /*#__PURE__*/ (0, _jsxRuntime.jsx)("h1", {
                     className: "m-2 p-2",
                     children: name
-                }, void 0, false, {
-                    fileName: "src/components/Instamart.js",
-                    lineNumber: 10,
-                    columnNumber: 13
-                }, undefined),
-                isVisible ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                }),
+                isVisible ? /*#__PURE__*/ (0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
                     children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        /*#__PURE__*/ (0, _jsxRuntime.jsx)("button", {
                             className: "bg-blue-500 hover:bg-blue-700 text-white p-1 m-2 rounded",
                             onClick: ()=>setIsVisible(),
                             children: "hide"
-                        }, void 0, false, {
-                            fileName: "src/components/Instamart.js",
-                            lineNumber: 12,
-                            columnNumber: 33
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        }),
+                        /*#__PURE__*/ (0, _jsxRuntime.jsx)("p", {
                             className: "m-2 p-2",
                             children: description
-                        }, void 0, false, {
-                            fileName: "src/components/Instamart.js",
-                            lineNumber: 13,
-                            columnNumber: 33
-                        }, undefined)
+                        })
                     ]
-                }, void 0, true) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                }) : /*#__PURE__*/ (0, _jsxRuntime.jsx)("button", {
                     className: "bg-blue-500 hover:bg-blue-700 text-white p-1 m-2 rounded",
                     onClick: ()=>setIsVisible(),
                     children: "show"
-                }, void 0, false, {
-                    fileName: "src/components/Instamart.js",
-                    lineNumber: 14,
-                    columnNumber: 35
-                }, undefined)
+                })
             ]
-        }, void 0, true, {
-            fileName: "src/components/Instamart.js",
-            lineNumber: 9,
-            columnNumber: 9
-        }, undefined)
-    }, void 0, false);
+        })
+    });
 };
 _c = Section;
 const Instamart = ()=>{
-    _s();
     const [isVisibleSection, setIsVisibleSection] = (0, _react.useState)("");
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+    return /*#__PURE__*/ (0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("h1", {
                 className: "text-2xl font-bold justify-center flex m-2 p-2",
                 children: "Welcome to Instamart by Swiggy"
-            }, void 0, false, {
-                fileName: "src/components/Instamart.js",
-                lineNumber: 22,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)(Section, {
                 isVisible: isVisibleSection === "about",
                 setIsVisible: ()=>isVisibleSection === "about" ? setIsVisibleSection("") : setIsVisibleSection("about"),
                 name: "AboutSection",
                 description: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, comes from a line in section 1.10.32."
-            }, void 0, false, {
-                fileName: "src/components/Instamart.js",
-                lineNumber: 23,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)(Section, {
                 isVisible: isVisibleSection === "profile",
                 setIsVisible: ()=>isVisibleSection === "profile" ? setIsVisibleSection("") : setIsVisibleSection("profile"),
                 name: "profileSection",
                 description: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, comes from a line in section 1.10.32."
-            }, void 0, false, {
-                fileName: "src/components/Instamart.js",
-                lineNumber: 25,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)(Section, {
                 isVisible: isVisibleSection === "career",
                 setIsVisible: ()=>isVisibleSection === "career" ? setIsVisibleSection("") : setIsVisibleSection("career"),
                 name: "CareerSection",
                 description: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, comes from a line in section 1.10.32."
-            }, void 0, false, {
-                fileName: "src/components/Instamart.js",
-                lineNumber: 27,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)(Section, {
                 isVisible: isVisibleSection === "payment",
                 setIsVisible: ()=>isVisibleSection === "payment" ? setIsVisibleSection("") : setIsVisibleSection("payment"),
                 name: "PaymentSection",
                 description: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, comes from a line in section 1.10.32."
-            }, void 0, false, {
-                fileName: "src/components/Instamart.js",
-                lineNumber: 29,
-                columnNumber: 9
-            }, undefined)
+            })
         ]
-    }, void 0, true);
+    });
 };
-_s(Instamart, "v/JZzehSGhNFDI557OQsLqPtlE8=");
 _c1 = Instamart;
-exports.default = Instamart;
+var _default = exports.default = Instamart;
 var _c, _c1;
 $RefreshReg$(_c, "Section");
 $RefreshReg$(_c1, "Instamart");
@@ -735,6 +695,6 @@ $RefreshReg$(_c1, "Instamart");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}]},["5u83V","1xC6H"], null, "parcelRequirec124")
+},{"a59def013504367":"21dqq","eee1b7e9fb7b21db":"6AEwr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["5u83V","1xC6H"], null, "parcelRequirec124")
 
 //# sourceMappingURL=Instamart.0762395e.js.map

@@ -1,9 +1,9 @@
-import './shimmer.css'
+// import './shimmer.css'
 
 const Shimmer = () => {
     return (
     <>
-        <div className="flex flex-wrap justify-between">
+        <div data-testid="shimmer" className="flex flex-wrap justify-between">
             { 
                 Array.from({length:10}).map((el , idx) => {
                     return (

@@ -15,6 +15,8 @@ import Login from "./components/Login"
 import ProfileClass from "./components/ProfileClass"
 import Shimmer from "./components/Shimmer"
 import UserContext from "./utils/UserContext"
+import { Provider } from "react-redux"
+import CartStore from "./utils/store"
 
 const Instamart = lazy(() => import('./components/Instamart'));
 
@@ -29,14 +31,16 @@ const AppLayout = () => {
 
     return (
         <>
-            <UserContext.Provider value={{
-                user : user,
-                setUser
-            }}>
-                <Header />
-                <Outlet />
-                <Footer />
-            </UserContext.Provider>
+            <Provider store={CartStore}>
+                <UserContext.Provider value={{
+                    user : user,
+                    setUser
+                }}>
+                    <Header />
+                    <Outlet />
+                    <Footer />
+                </UserContext.Provider>
+            </Provider>
         </>
     )
 }
